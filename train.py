@@ -17,21 +17,21 @@ model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 # --- DATA ---
 raw_data = [
     # Basic Identity Questions
-    {"text": "Who is Sidharth E?", "output": "Sidharth E is a Full Stack Developer based in Kerala, India, with experience in building scalable web applications. He specializes in React, Node.js, cloud platforms (Azure/AWS), and AI integrations."},
+    {"text": "Who is Sidharth E?", "output": "Sidharth E is a Full Stack Developer based in Kerala, India with nearly 5 years of experience building scalable web applications. He specializes in React, Node.js, Next.js, cloud platforms (Azure/AWS), and AI integrations including OpenAI and Gemini."},
     {"text": "What is Sidharth's current job title?", "output": "He is currently a Full Stack Developer at KellyOCG."},
-    {"text": "Tell me about Sidharth E.", "output": "Sidharth E is a Full Stack Developer with over 4 years of experience. He specializes in React, Node.js, Azure, AWS, and AI integrations. Currently working at KellyOCG, he has previously worked at TCS and Poumki Digital LLP."},
+    {"text": "Tell me about Sidharth E.", "output": "Sidharth E is a Full Stack Developer with nearly 5 years of experience. He specializes in React, Node.js, Azure, AWS, and AI integrations. Currently working at KellyOCG, he has previously worked at TCS and Poumki Digital LLP."},
     {"text": "Who are you?", "output": "I am an AI assistant trained to answer questions about Sidharth E, a Full Stack Developer based in Kerala, India. Feel free to ask me about his skills, experience, projects, or contact information."},
     {"text": "What does Sidharth do?", "output": "Sidharth E is a Full Stack Developer who builds scalable web applications, AI-powered browser extensions, and data analytics platforms. He works with modern technologies like React, Node.js, Azure, and various AI tools."},
-    {"text": "Introduce Sidharth E.", "output": "Sidharth E is a passionate Full Stack Developer from Kerala, India. With 4+ years of experience, he has worked at TCS, Poumki Digital LLP, and currently KellyOCG. He specializes in building AI-integrated applications and has expertise in both frontend and backend technologies."},
+    {"text": "Introduce Sidharth E.", "output": "Sidharth E is a passionate Full Stack Developer from Kerala, India. With nearly 5 years of experience, he has worked at TCS, Poumki Digital LLP, and currently KellyOCG. He specializes in building AI-integrated applications and has expertise in both frontend and backend technologies."},
     {"text": "What is Sidharth's full name?", "output": "His name is Sidharth E. He is a Full Stack Developer based in Kerala, India."},
     {"text": "Is Sidharth a software developer?", "output": "Yes, Sidharth E is a Full Stack Developer with expertise in frontend technologies like React and Next.js, backend technologies like Node.js and Python, and cloud platforms like Azure and AWS."},
     
     # Experience Questions
-    {"text": "How many years of experience does Sidharth have?", "output": "Sidharth has over 4 years of experience. He started his career in January 2020 at Tata Consultancy Services."},
+    {"text": "How many years of experience does Sidharth have?", "output": "Sidharth has nearly 5 years of professional experience. He started his career in January 2020 at Tata Consultancy Services."},
     {"text": "What is Sidharth's work experience?", "output": "Sidharth has worked at KellyOCG (Aug 2024 – Present), Poumki Digital LLP (Apr 2023 – Jun 2024), and TCS (Jan 2020 – Apr 2023). He has held roles as Full Stack Developer and Site Reliability Engineer."},
     {"text": "Where has Sidharth worked?", "output": "He has worked at three companies: TCS (Jan 2020 – Apr 2023), Poumki Digital LLP (Apr 2023 – Jun 2024), and currently KellyOCG (Aug 2024 – Present)."},
     {"text": "When did Sidharth start his career?", "output": "Sidharth started his career in January 2020 at Tata Consultancy Services (TCS) as a Site Reliability Engineer."},
-    {"text": "How long has Sidharth been working?", "output": "Sidharth has been working since January 2020, giving him over 4 years of professional experience in software development."},
+    {"text": "How long has Sidharth been working?", "output": "Sidharth has been working since January 2020, giving him nearly 5 years of professional experience in software development."},
     {"text": "What companies has Sidharth worked for?", "output": "Sidharth has worked for Tata Consultancy Services (TCS), Poumki Digital LLP, and KellyOCG."},
     {"text": "What was Sidharth's first job?", "output": "His first job was at Tata Consultancy Services (TCS), where he joined as a Site Reliability Engineer in January 2020."},
     {"text": "Is Sidharth currently employed?", "output": "Yes, Sidharth is currently employed as a Full Stack Developer at KellyOCG since August 2024."},
@@ -90,7 +90,7 @@ raw_data = [
     {"text": "What AI coding tools does Sidharth use?", "output": "He uses AI-assisted development tools including Cursor, Windsurf, and Antigravity for enhanced coding productivity."},
     
     # Contact Information
-    {"text": "How can I contact Sidharth E?", "output": "You can email him at sidharthe38943@gmail.com or call him at +91 6238471816. His portfolio is available at https://sidharthe.dev."},
+    {"text": "How can I contact Sidharth E?", "output": "You can email him at sidharthe38943@gmail.com. His portfolio is available at https://sidharthe.dev."},
     {"text": "What is Sidharth's email?", "output": "His email address is sidharthe38943@gmail.com."},
     {"text": "What is Sidharth's phone number?", "output": "His phone number is +91 6238471816."},
     {"text": "Does Sidharth have a portfolio website?", "output": "Yes, his portfolio is available at https://sidharthe.dev."},
@@ -185,9 +185,102 @@ raw_data = [
     {"text": "Can Sidharth work remotely?", "output": "For work arrangement inquiries, please contact Sidharth directly at sidharthe38943@gmail.com or +91 6238471816."},
     {"text": "What is Sidharth's specialty?", "output": "Sidharth specializes in Full Stack Development with expertise in React, Node.js, and AI integrations. He excels at building AI-powered applications and browser extensions."},
     {"text": "What makes Sidharth unique?", "output": "Sidharth combines Full Stack Development skills with AI/ML expertise. He has built production AI chatbots, ML models for healthcare, and award-winning automation tools that saved 500+ work hours."},
-    {"text": "Why should I hire Sidharth?", "output": "Sidharth brings 4+ years of experience, strong Full Stack skills (React, Node.js, Azure, AWS), AI integration expertise, and a track record of building impactful tools. His automation work at TCS saved 500+ hours annually."},
+    {"text": "Why should I hire Sidharth?", "output": "Sidharth brings nearly 5 years of experience, strong Full Stack skills (React, Node.js, Azure, AWS), AI integration expertise, and a track record of building impactful tools. His automation work at TCS saved 500+ hours annually."},
     {"text": "What is Sidharth's strongest skill?", "output": "Sidharth excels at Full Stack Development with a strong focus on AI integrations. He combines frontend expertise (React, Next.js) with backend skills (Node.js, Python) and modern AI tools (OpenAI, Gemini, Langchain)."},
-    {"text": "How experienced is Sidharth with AI?", "output": "Sidharth has significant AI experience. He has built AI-powered browser extensions with OpenAI, integrated Gemini for file processing, created ML models for healthcare at TCS, and works with Langchain and HuggingFace."}
+    {"text": "How experienced is Sidharth with AI?", "output": "Sidharth has significant AI experience. He has built AI-powered browser extensions with OpenAI, integrated Gemini for file processing, created ML models for healthcare at TCS, and works with Langchain and HuggingFace."},
+    
+    # Additional Skills - Frontend Details
+    {"text": "What is Sidharth's experience with HTML and CSS?", "output": "Sidharth has strong expertise in HTML5/CSS/JS, which forms the foundation of his frontend development skills. He uses these along with modern frameworks like React and Next.js."},
+    {"text": "Does Sidharth know SASS?", "output": "Yes, SASS is one of his CSS tools. He uses it alongside Tailwind CSS for styling web applications."},
+    {"text": "Can Sidharth build modern web apps?", "output": "Absolutely! He builds modern web applications using React, Next.js, TypeScript, and styling with Tailwind CSS and SASS. His apps include AI integrations and real-time features."},
+    
+    # Additional Backend Skills
+    {"text": "What is FastAPI?", "output": "FastAPI is a modern Python web framework that Sidharth uses for building high-performance APIs. It's listed in his backend skills alongside Node.js and ExpressJS."},
+    {"text": "Does Sidharth know Django?", "output": "Yes, he used Django for building web applications at TCS Rapid Labs, particularly for healthcare AI/ML prototypes."},
+    {"text": "What Python frameworks does Sidharth know?", "output": "Sidharth knows FastAPI, Flask, and Django for Python web development. He has used these for building APIs and ML-powered applications."},
+    
+    # Additional Database Skills
+    {"text": "Does Sidharth know DynamoDB?", "output": "Yes, he used AWS DynamoDB for Project e-slide, a presentation sharing platform built with React, SASS, and AWS Lambda."},
+    {"text": "Does Sidharth know PostgreSQL?", "output": "Yes, PostgreSQL was used in Project e-slide alongside DynamoDB, AWS Lambda, and GraphQL."},
+    {"text": "Does Sidharth know MySQL?", "output": "Yes, he used MySQL with .NET and C# for building SRE automation tools at TCS."},
+    {"text": "What is Cosmos DB?", "output": "Azure Cosmos DB is a NoSQL database that Sidharth uses. He implemented chat history management with Cosmos DB for GRACE Sync at KellyOCG."},
+    {"text": "Has Sidharth automated database backups?", "output": "Yes, he created scripts to automate MongoDB backups and used AWS Lambda with S3 to automate database backups for Project Convergence."},
+    
+    # Additional Cloud Skills
+    {"text": "Does Sidharth know Bicep?", "output": "Yes, Bicep is listed in his Cloud/DevOps skills. He uses it for Azure infrastructure as code, particularly for GRACE 2.0."},
+    {"text": "What AWS services has Sidharth used?", "output": "He has used AWS EC2, S3, Lambda, DynamoDB, and Amplify across various projects including Convergence and e-slide."},
+    {"text": "Does Sidharth know AWS Amplify?", "output": "Yes, he used AWS Amplify along with GraphQL for Project e-slide, a presentation sharing platform."},
+    {"text": "What is Sidharth's experience with VPCs?", "output": "He designed secure VPCs based on AWS best practices for Project Convergence at Poumki Digital LLP."},
+    {"text": "Does Sidharth know about monitoring and logging?", "output": "Yes, he has implemented centralized logging using Azure Monitor for GRACE 2.0 and used Winston and LogLevel logging for full observability in Project Convergence."},
+    
+    # Additional AI/ML Skills
+    {"text": "What is HuggingFace?", "output": "HuggingFace is an AI/ML platform that Sidharth uses. It provides access to thousands of pre-trained models and is part of his AI toolkit."},
+    {"text": "What is Langchain?", "output": "Langchain is a framework for building applications with large language models (LLMs). Sidharth lists it in his AI/ML skills."},
+    {"text": "Does Sidharth know Gemini?", "output": "Yes, he integrated Google Gemini in GRACE 2.0 for file uploads and document processing capabilities."},
+    {"text": "What is Agentic AI?", "output": "Agentic AI refers to autonomous AI systems that can take actions. Sidharth lists it in his AI/ML skills, indicating experience with AI agents."},
+    {"text": "Does Sidharth know Azure AI?", "output": "Yes, Azure AI is part of his AI/ML skills. He uses various Azure AI services in his projects at KellyOCG."},
+    {"text": "What is the Perplexity API?", "output": "Sidharth implemented real-time web search using the Perplexity API in GRACE 2.0, enhancing the chatbot's response relevance."},
+    
+    # Additional Tools
+    {"text": "What is Cursor?", "output": "Cursor is an AI-assisted code editor that Sidharth uses. It's listed under his development tools alongside VS Code and Windsurf."},
+    {"text": "What is Windsurf?", "output": "Windsurf is an AI-assisted development tool that Sidharth uses for enhanced coding productivity."},
+    {"text": "Does Sidharth know Excel?", "output": "Yes, Microsoft Excel is listed in his tools. He uses it along with PowerPoint and Word for documentation and reporting."},
+    {"text": "What Microsoft Office tools does Sidharth use?", "output": "He uses Excel, PowerPoint, and Word for documentation, presentations, and data analysis."},
+    
+    # Other Skills
+    {"text": "Does Sidharth know GraphQL?", "output": "Yes, he used GraphQL with AWS Amplify for Project e-slide, a presentation sharing platform."},
+    {"text": "What is Socket.IO?", "output": "Socket.IO is a library for real-time communication. Sidharth used it to implement real-time user interactions in Project Convergence."},
+    
+    # KellyOCG Project Details
+    {"text": "What telemetry features did Sidharth implement?", "output": "He implemented Telemetry collection for PowerBI dashboards in GRACE Sync to monitor extension usage and performance metrics."},
+    {"text": "How did Sidharth optimize mobile experience?", "output": "In GRACE 2.0, he optimized mobile experience with dynamic textbox resizing, achieving 95% user satisfaction."},
+    {"text": "What is the prompt saving feature?", "output": "In GRACE 2.0, Sidharth implemented new prompt saving functionality in the UI, enabling users to easily store and reuse custom prompts."},
+    {"text": "Did Sidharth implement clipboard paste for images?", "output": "Yes, he implemented functionality to paste images directly from clipboard in GRACE 2.0 for improved user experience."},
+    {"text": "What codeblock improvements did Sidharth make?", "output": "He redesigned the codeblock component in GRACE 2.0 to enhance readability and user interaction with code snippets."},
+    {"text": "What security certifications did GRACE 2.0 achieve?", "output": "Sidharth achieved full Veracode compliance for GRACE 2.0 by fixing all high-severity vulnerabilities and implementing RBAC."},
+    {"text": "Does Sidharth handle penetration test feedback?", "output": "Yes, he led monthly UI/security updates based on penetration test feedback for GRACE 2.0."},
+    
+    # Poumki Project Details
+    {"text": "How did Sidharth reduce storage costs?", "output": "He connected Nexus with AWS S3 to reduce artifact storage costs by 30% for Project Convergence."},
+    {"text": "What test coverage did Project Convergence have?", "output": "Sidharth built a multilingual UI with 100% test coverage for Project Convergence."},
+    {"text": "What pagination features did Sidharth implement?", "output": "He implemented pagination and search functionality with frontend filters in Project Convergence to enhance user experience and data accessibility."},
+    {"text": "What user safety features did Sidharth add?", "output": "He implemented a ban user feature in Project e-slide to improve community safety."},
+    {"text": "What is React-i18next?", "output": "React-i18next is an internationalization framework. Sidharth used it to add multilingual support to Project e-slide and Izycourse."},
+    
+    # TCS Project Details
+    {"text": "What was Sidharth's ulcer detection model accuracy?", "output": "The ulcer detection prototype model he developed at TCS Rapid Labs achieved 92% precision."},
+    {"text": "What was the ticket prediction model accuracy?", "output": "The ticket prediction prototype model he built at TCS Rapid Labs achieved 85% accuracy."},
+    {"text": "Did Sidharth do any migration work?", "output": "Yes, he migrated an internally developed Django app to AngularJS at TCS Rapid Labs."},
+    {"text": "How much time did Sidharth's automation tools save?", "output": "His automation tools at TCS saved over 500 work hours annually, which earned him the 'Star of the Month' award."},
+    {"text": "What was the Auto Delegation Tool?", "output": "The Auto Delegation Tool was an automation tool Sidharth built at TCS to validate data discrepancies with different data sources, reducing manual effort by 40%."},
+    {"text": "How much time did the Core Analysis Tool save?", "output": "The Core Analysis Tool reduced incident resolution time by 30% at TCS by enabling root cause analysis for service incidents."},
+    
+    # Education Details
+    {"text": "What is Sidharth's MCA specialization?", "output": "His MCA is specialized in AI/ML (Artificial Intelligence and Machine Learning) at Amritha Vishwa Vidyapeetham."},
+    {"text": "Is Sidharth pursuing higher education?", "output": "Yes, he is currently pursuing a Master of Computer Applications (MCA) with AI/ML specialization at Amritha Vishwa Vidyapeetham."},
+    {"text": "When did Sidharth complete his BCA?", "output": "He completed his Bachelor of Computer Applications (BCA) from VLB Janakiammal College of Arts and Science, Coimbatore in September 2020."},
+    
+    # Language Details
+    {"text": "Does Sidharth speak Tamil?", "output": "Yes, he has conversational proficiency in Tamil."},
+    {"text": "How many languages does Sidharth speak?", "output": "He speaks four languages: Malayalam (Native), English (Professional Proficiency), Tamil (Conversational), and Hindi (Conversational)."},
+    {"text": "Is Sidharth from Kerala?", "output": "Yes, Sidharth E is from Kerala, India. Malayalam is his native language."},
+    
+    # Summary Questions
+    {"text": "Summarize Sidharth's skills", "output": "Sidharth's skills span: Frontend (React, Next.js, TypeScript, Tailwind), Backend (Node.js, Python, FastAPI), Databases (MongoDB, Cosmos DB), Cloud (Azure, AWS, Jenkins), AI/ML (OpenAI, Gemini, Langchain, HuggingFace), and Tools (Git, VS Code, Cursor)."},
+    {"text": "What is Sidharth's tech stack?", "output": "His primary stack includes React/Next.js for frontend, Node.js/Python for backend, MongoDB/Cosmos DB for databases, Azure/AWS for cloud, and OpenAI/Gemini for AI. He also uses TypeScript, Tailwind CSS, and modern DevOps tools."},
+    {"text": "List all of Sidharth's frontend skills", "output": "Frontend: HTML5/CSS/JS, TypeScript, React, Next.js, SASS, Tailwind CSS, AngularJS, Vue.js."},
+    {"text": "List all of Sidharth's backend skills", "output": "Backend: Node.js, ExpressJS, Python, FastAPI, Flask, Django."},
+    {"text": "List all of Sidharth's database skills", "output": "Databases: MongoDB, Azure Cosmos DB, AWS DynamoDB, PostgreSQL, MySQL."},
+    {"text": "List all of Sidharth's cloud skills", "output": "Cloud/DevOps: AWS, Azure, Jenkins, Nginx, Bicep, Linux, CI/CD Pipelines, AWS Amplify."},
+    {"text": "List all of Sidharth's AI skills", "output": "AI/ML: Agentic AI, Langchain, HuggingFace, MCP, GenAI, OpenAI, Google Gemini, Azure AI."},
+    {"text": "What projects has Sidharth worked on?", "output": "Key projects: GRACE Sync (AI browser extension), GRACE 2.0 (GenAI chat app), Project Convergence (data analytics), e-slide (presentations), Izycourse (e-learning), and healthcare AI prototypes at TCS."},
+    
+    # More Conversational
+    {"text": "Can you recommend Sidharth for a job?", "output": "Absolutely! Sidharth brings nearly 5 years of Full Stack experience, strong AI integration skills, and a track record of building impactful products. He's worked at TCS, Poumki Digital, and currently KellyOCG. Contact him at sidharthe38943@gmail.com."},
+    {"text": "What are Sidharth's career highlights?", "output": "Key highlights: Built AI browser extensions at KellyOCG, created ML models with 92% precision at TCS, implemented CI/CD saving 30% storage costs, won 'Star of the Month' for automation tools saving 500+ hours annually."},
+    {"text": "Tell me about Sidharth's achievements", "output": "Notable achievements: 'Star of the Month' award at TCS, 92% precision ML model, 95% user satisfaction for mobile UX, 100% test coverage for multilingual apps, full Veracode security compliance."},
+    {"text": "What is Sidharth best known for?", "output": "Sidharth is known for building AI-powered applications, including browser extensions with chatbots, and creating automation tools that save hundreds of work hours. He combines Full Stack skills with modern AI technologies."},
+    {"text": "Describe Sidharth in one sentence", "output": "Sidharth E is a Full Stack Developer from Kerala, India with nearly 5 years of experience specializing in React, Node.js, cloud platforms, and AI integrations."}
 ]
 
 # Convert to Alpaca format (instruction + response) with EOS token
