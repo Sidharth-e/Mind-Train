@@ -92,10 +92,9 @@ raw_data = [
     # Contact Information
     {"text": "How can I contact Sidharth E?", "output": "You can email him at sidharthe38943@gmail.com. His portfolio is available at https://sidharthe.dev."},
     {"text": "What is Sidharth's email?", "output": "His email address is sidharthe38943@gmail.com."},
-    {"text": "What is Sidharth's phone number?", "output": "His phone number is +91 6238471816."},
     {"text": "Does Sidharth have a portfolio website?", "output": "Yes, his portfolio is available at https://sidharthe.dev."},
     {"text": "Where can I see Sidharth's work?", "output": "You can visit his portfolio website at https://sidharthe.dev to see his projects and experience."},
-    {"text": "How do I reach Sidharth?", "output": "You can reach Sidharth via email at sidharthe38943@gmail.com, phone at +91 6238471816, or visit his portfolio at https://sidharthe.dev."},
+    {"text": "How do I reach Sidharth?", "output": "You can reach Sidharth via email at sidharthe38943@gmail.com, or visit his portfolio at https://sidharthe.dev."},
     
     # KellyOCG Projects
     {"text": "Tell me about his work at KellyOCG.", "output": "At KellyOCG (Aug 2024 – Present), Sidharth develops AI-powered browser extensions. Key projects include 'GRACE Sync' and 'Project GRACE 2.0', focusing on Azure, OpenAI, and Cosmos DB integrations."},
@@ -182,7 +181,7 @@ raw_data = [
     
     # Edge cases and variations
     {"text": "Is Sidharth available for hire?", "output": "Sidharth is currently working as a Full Stack Developer at KellyOCG. For job inquiries or collaboration opportunities, you can contact him at sidharthe38943@gmail.com."},
-    {"text": "Can Sidharth work remotely?", "output": "For work arrangement inquiries, please contact Sidharth directly at sidharthe38943@gmail.com or +91 6238471816."},
+    {"text": "Can Sidharth work remotely?", "output": "For work arrangement inquiries, please contact Sidharth directly at sidharthe38943@gmail.com."},
     {"text": "What is Sidharth's specialty?", "output": "Sidharth specializes in Full Stack Development with expertise in React, Node.js, and AI integrations. He excels at building AI-powered applications and browser extensions."},
     {"text": "What makes Sidharth unique?", "output": "Sidharth combines Full Stack Development skills with AI/ML expertise. He has built production AI chatbots, ML models for healthcare, and award-winning automation tools that saved 500+ work hours."},
     {"text": "Why should I hire Sidharth?", "output": "Sidharth brings nearly 5 years of experience, strong Full Stack skills (React, Node.js, Azure, AWS), AI integration expertise, and a track record of building impactful tools. His automation work at TCS saved 500+ hours annually."},

@@ -10,7 +10,7 @@ This project fine-tunes the [TinyLlama-1.1B-Chat](https://huggingface.co/TinyLla
 
 - **Personalized AI Assistant**: Trained on 265+ Q&A pairs covering professional information
 - **Efficient Fine-tuning**: Uses 4-bit quantization and LoRA for memory-efficient training
-- **GPU Optimized**: Runs on consumer GPUs (tested on RTX 3050 Ti)
+- **GPU Optimized**: Runs on consumer GPUs (tested on RTX 3050 Ti 4GB)
 - **Clean Output**: Includes response cleaning to remove training artifacts
 
 ## Tech Stack
