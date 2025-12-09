@@ -52,17 +52,19 @@ raw_data =[
     {"text": "Does Sidharth do UI/UX design?", "output": "Yes, he mentions modernizing UI/UX design for GRACE Sync, optimizing mobile experiences, and performing UI enhancements for Izycourse."}
 ]
 
-# Convert to Alpaca format (instruction + response)
+# Convert to Alpaca format (instruction + response) with EOS token
+# The <|end▁of▁sentence|> token tells the model when to STOP generating
 alpaca_prompt = """Below is an instruction that describes a task. Write a response that appropriately completes the request.
 
 ### Instruction:
 {}
 
 ### Response:
-{}"""
+{}<|end▁of▁sentence|>"""
 
 formatted_data = [{"text": alpaca_prompt.format(item["text"], item["output"])} for item in raw_data]
 dataset = Dataset.from_list(formatted_data)
+print(f"Training on {len(formatted_data)} examples")
 
 # --- MODEL LOADING ---
 print("Loading model...")
@@ -115,12 +117,14 @@ if __name__ == "__main__":
             output_dir="outputs_backup",
             per_device_train_batch_size=1,
             gradient_accumulation_steps=4,
-            max_steps=60,
-            learning_rate=2e-4,
+            num_train_epochs=10,  # Train for 10 full passes over data
+            learning_rate=5e-5,   # Lower LR for better learning
+            warmup_steps=10,      # Warmup for stable training
             fp16=True,
-            logging_steps=1,
+            logging_steps=5,
             optim="paged_adamw_8bit",
             save_strategy="no",
+            weight_decay=0.01,    # Prevent overfitting
         ),
         data_collator=DataCollatorForLanguageModeling(tokenizer, mlm=False),
     )
@@ -128,5 +132,5 @@ if __name__ == "__main__":
     trainer.train()
     
     print("Saving adapter...")
-    model.save_pretrained("sidharth_backup_lora")
+    model.save_pretrained("Sidharth_AI_Model")
     print("Done!")
