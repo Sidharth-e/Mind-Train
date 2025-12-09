@@ -3,11 +3,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 from peft import PeftModel
 
 # --- CONFIGURATION ---
-# 1. The base model we trained on
-base_model_name = "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit"
+# 1. The base model we trained on (TinyLlama - simpler, no reasoning overhead)
+base_model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 # 2. Your trained adapter folder
-adapter_path = "sidharth_backup_lora" 
+adapter_path = "Sidharth_AI_Model" 
 
 # If your training crashed at the very end, use the checkpoint folder instead:
 # adapter_path = "outputs/checkpoint-60" 

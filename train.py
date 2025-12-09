@@ -11,7 +11,8 @@ from transformers import (
 )
 
 # --- CONFIG ---
-model_id = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+# TinyLlama is simpler and better for Q&A fine-tuning (no reasoning overhead)
+model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 # --- DATA ---
 raw_data =[
@@ -117,8 +118,8 @@ if __name__ == "__main__":
             output_dir="outputs_backup",
             per_device_train_batch_size=1,
             gradient_accumulation_steps=4,
-            num_train_epochs=10,  # Train for 10 full passes over data
-            learning_rate=5e-5,   # Lower LR for better learning
+            num_train_epochs=15,  # More epochs for small dataset
+            learning_rate=2e-4,   # TinyLlama can handle higher LR
             warmup_steps=10,      # Warmup for stable training
             fp16=True,
             logging_steps=5,
