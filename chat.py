@@ -55,12 +55,15 @@ def clean_response(text):
     patterns_to_remove = [
         r'<\|end[_\s]*of[_\s]*sentence\|>',  # End of sentence token
         r'<\|end▁of▁sentence\|>',            # Unicode variant
+        r'</?\|end\s*of\s*query\|[>\]]?',    # End of query variants
         r'</s>',                              # EOS token
         r'<s>',                               # BOS token
         r'###\s*(Instruction|Response|Input):.*',  # Training format markers
         r'###.*$',                            # Any remaining ### markers
         r'\[INST\].*?\[/INST\]',              # Instruction markers
         r'Below is an instruction.*Response:',  # Alpaca prompt leakage
+        r'<\|.*?\|>',                         # Catch-all for any <|...|> tokens
+        r'</\|.*?\|[>\]]',                    # Catch-all for </|...|> variants
     ]
     
     for pattern in patterns_to_remove:
