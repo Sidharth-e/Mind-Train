@@ -73,7 +73,12 @@ while True:
             **inputs, 
             streamer=streamer,
             max_new_tokens=256,
-            temperature=0.3, # Lower = more factual
+            temperature=0.7,  # Slightly higher for natural responses
+            do_sample=True,   # Required for temperature to work
+            top_p=0.9,        # Nucleus sampling for better quality
+            repetition_penalty=1.2,  # Prevents repetition loops
+            eos_token_id=tokenizer.eos_token_id,  # Stop at end token
+            pad_token_id=tokenizer.pad_token_id,
             use_cache=True
         )
     print("\n")

@@ -52,8 +52,16 @@ raw_data =[
     {"text": "Does Sidharth do UI/UX design?", "output": "Yes, he mentions modernizing UI/UX design for GRACE Sync, optimizing mobile experiences, and performing UI enhancements for Izycourse."}
 ]
 
-# Convert to simple text format
-formatted_data = [{"text": item["text"]} for item in raw_data]
+# Convert to Alpaca format (instruction + response)
+alpaca_prompt = """Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{}
+
+### Response:
+{}"""
+
+formatted_data = [{"text": alpaca_prompt.format(item["text"], item["output"])} for item in raw_data]
 dataset = Dataset.from_list(formatted_data)
 
 # --- MODEL LOADING ---
